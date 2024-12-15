@@ -2,8 +2,8 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "dev:php": "docker-compose exec web sh -c \"cd /var/www/html/5026221097 && php artisan serve --host=0.0.0.0 --port=8000\"",
-        "make:controller": "docker-compose exec web sh -c \"cd /var/www/html/5026221097 && php artisan make:controller\"",
+        "dev:php": "docker-compose exec web sh -c \"cd /var/www/html/ && php artisan serve --host=0.0.0.0 --port=8000\"",
+        "make:controller": "docker-compose exec web sh -c \"cd /var/www/html/ && php artisan make:controller\"",
         "build": "vite build"
     },
     "devDependencies": {
