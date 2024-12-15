@@ -1,0 +1,85 @@
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-color: #EDEDED;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+/* Testimonial Section Styles */
+.testimonial {
+    background-color: #f4f4f4; 
+    padding: 30px;
+    border-radius: 10px;
+    transition: background 0.4s ease;
+    display: flex;
+    align-items: center; 
+}
+
+.testimonial img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.testimonial-content {
+    font-size: 16px;
+}
+
+.testimonial-content h6 {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.testimonial-content span {
+    color: #555;
+    font-size: 14px;
+}
+
+
+.testimonial:hover {
+    background: linear-gradient(45deg, #0463CA, #B0D6F5); /* Gradient background on hover */
+    color: white;
+}
+
+.testimonial:hover h6, 
+.testimonial:hover span, 
+.testimonial:hover p {
+    color: white;
+}
+
+.img-wrapper {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+
+footer a {
+    font-size: 40px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #f0d130;
+}
+
+footer .col-2 {
+    padding: 10px 0;
+}
+
+
+.container .row.g-4 {
+    gap: 20px; 
+}

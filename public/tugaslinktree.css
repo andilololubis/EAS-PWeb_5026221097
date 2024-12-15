@@ -1,0 +1,51 @@
+/* Apply Raleway Font */
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: linear-gradient(45deg, #f8a100, #0060c6);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .content-wrapper {
+    text-align: center;
+    color: white;
+  }
+  
+  .logo img {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+    margin: 0 10px;
+    color: white;
+    font-size: 24px;  /* Size for social icons */
+  }
+  
+  /* Adjusted Button Container Width */
+  .button-container {
+    max-width: 400px;  /* Reduced the container width */
+    margin: 0 auto;
+  }
+  
+  .btn-custom {
+    background-color: #083358;
+    color: white;
+    width: 100%; /* Buttons now take full width of the container */
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .btn-custom i {
+    margin-right: 10px;
+  }
+  
+  .footer {
+    margin-top: 20px;
+  }
