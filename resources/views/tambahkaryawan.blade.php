@@ -23,25 +23,21 @@
 <body>
  
 	<h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-	<h3>Edit Pegawai</h3>
+	<h3>Data Karyawan</h3>
  
-	<a href="/pegawai"> Kembali</a>
+	<a href="/karyawan"> Kembali</a>
 	
 	<br/>
 	<br/>
  
-	@foreach($pegawai as $p)
-	<form action="/pegawai/update" method="post">
+	<form action="/karyawan/store" method="post">
 		{{ csrf_field() }}
-		<input type="hidden" name="id" value="{{ $p->pegawai_id }}"> <br/>
-		Nama <input type="text" required="required" name="nama" value="{{ $p->pegawai_nama }}"> <br/>
-		Jabatan <input type="text" required="required" name="jabatan" value="{{ $p->pegawai_jabatan }}"> <br/>
-		Umur <input type="number" required="required" name="umur" value="{{ $p->pegawai_umur }}"> <br/>
-		Alamat <textarea required="required" name="alamat">{{ $p->pegawai_alamat }}</textarea> <br/>
+		Kode <input type="text" name="kode" required="required"> <br/>
+		Nama <input type="text" name="nama" required="required"> <br/>
+		Divisi <input type="text" name="divisi" required="required"> <br/>
+		Departemen <input type="number" name="departemen" required="required"> <br/>
 		<input type="submit" value="Simpan Data">
 	</form>
-	@endforeach
-		
  
 </body>
 </html>

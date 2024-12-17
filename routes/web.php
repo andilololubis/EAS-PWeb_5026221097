@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\BlogController;
+use App\Http\Controllers\KaryawanController;
 use App\Http\Controllers\TugasController;
 
 /*
@@ -48,3 +49,9 @@ Route::get('/pegawai/cari',[PegawaiDBController::class, 'cari']);
 
 Route::get('/linktree', [TugasController::class, 'linktree']);
 Route::get('/week5', [TugasController::class, 'week5']);
+
+Route::get('/karyawan', [KaryawanController::class, 'index']);
+Route::get('/karyawan/tambah', [KaryawanController::class, 'tambah']);
+Route::post('/karyawan/store', [KaryawanController::class, 'store']);
+Route::get('/karyawan/hapus/{id}',[KaryawanController::class, 'hapus']);
+Route::get('/karyawan/cari',[KaryawanController::class, 'cari']);
